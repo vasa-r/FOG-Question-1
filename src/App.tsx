@@ -1,5 +1,11 @@
+import SideBar from "./components/SideBar";
+
 const App = () => {
-  return <div className="p-10 h-screen w-screen bg-slate-100">App</div>;
+  return (
+    <div className="flex w-screen h-screen">
+      <SideBar />
+    </div>
+  );
 };
 
 export default App;
