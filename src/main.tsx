@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
-import { BrowserRouter } from "react-router-dom";
+import { AudioPlayerProvider } from "./context/AudioPlayerContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
+  <AudioPlayerProvider>
     <App />
-  </BrowserRouter>
+  </AudioPlayerProvider>
 );
